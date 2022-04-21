@@ -1,0 +1,306 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: myFont;
+    src: url(../OneDirection.ttf);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    /* position: sticky; */
+    /* top: 0px; */
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* right: 0px; */
+    height: 17%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#logo {
+    margin: 21px 21px;
+}
+
+#logo img {
+    margin: -15px -15px;
+    height: 100px;
+}
+
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    font-size: 1.5rem;
+    display: block;
+    padding: 3px 39px;
+    margin: 19px 26px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+#navbar ul li a:hover {
+    color: skyblue;
+    background-color: #a71010;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
+    background-attachment: scroll;
+}
+/* 
+@media(min-aspect-ratio: 16/9) {
+    #myVideo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9) {
+    #myVideo {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media(max-width: 767px) {
+    #myVideo {
+        display: none;
+    }
+
+    body {
+        background: url("../poster.png") no-repeat center center/cover;
+    }
+} */
+
+section {
+    position: relative;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 470px;
+    padding: 21px 21px;
+}
+
+.phding {
+    font-size: 3.5rem;
+    color: #a71010;
+    animation-name: shanks1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes shanks1 {
+    from {
+        color: rgba(167, 16, 16, 0.5);
+       font-size: 50px;
+
+    }
+
+    to {
+        color: rgba(167, 16, 16, 1);
+        font-size: 80px;
+    }
+}
+
+.shding {
+    font-size: 2.5rem;
+    color: white;
+
+}
+
+#home p {
+    font-size: 1.5rem;
+    color: aqua;
+    margin: 20px 150px;
+    padding: 35px 60px;
+    text-align: center;
+}
+
+.btn {
+    margin: -30px 0px;
+    padding: 5px 40px;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    border-radius: 2rem;
+    box-shadow: rgba(167, 16, 16, 0.9) 0.3rem 0.3rem;
+    background-color: rgba(167, 16, 16, 0.4);
+    cursor: pointer;
+    animation-name: shanks;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.btn:hover {
+    background-color: rgba(4, 245, 245, 0.1);
+}
+
+.center {
+    text-align: center;
+}
+
+#media {
+    margin: 21px;
+    display: flex;
+}
+
+#media .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: -7px 50px;
+    border-radius: 28px;
+    background: #a71010;
+    margin-bottom: 20px;
+    height: 410px;
+}
+
+#media .box img {
+    height: 291px;
+    margin: -1px -18px;
+    display: block;
+    width: 300px;
+}
+
+#media h2 {
+    text-decoration-line: underline;
+    animation-name: shanks;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shanks {
+    from {
+        color: rgba(0, 253, 253, 0.4);
+    }
+
+    to {
+        color: rgba(0, 253, 253, 0.9);
+    }
+}
+
+#music {
+    height: 351px;
+}
+
+#available {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 900px;
+}
+
+#available img {
+    height: 151px;
+}
+
+.site {
+    padding: 34px;
+}
+
+#available::before {
+    content: "";
+    position: absolute;
+    background: url(../img/bg5.jpg);
+    width: 100%;
+    height: 630px;
+    z-index: -1;
+    opacity: 0.8;
+}
+.site:hover{
+    height: 200px;
+}
+#contact h1{
+    padding-top: 200px;
+    margin: 21px 21px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    z-index: -20;
+    opacity: 0.6;
+    background: url(../img/bgc2.png) no-repeat center center/cover;
+}
+footer{
+    color: white;
+    background: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 21px;
+   
+}
+#contact-box input{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: larger;
+    font-weight: bold;
+    border: 4px inset #a71010;
+    text-align: center;
+    color:#a71010;
+    box-shadow: #a71010 2px 2px;
+    text-shadow: #a71010 1px 1px;
+}
+#contact-box form{
+    width: 40%;
+}
+
+.gg-profile{
+    color: #a71010;
+    top: 32px;
+    left: -28px;
+
+}
+.gg-mail{
+    color: #a71010;
+    top: 30px;
+    left: -26px;
+
+}
+.gg-phone{
+    color: #a71010;
+    top:33px;
+    left: -28px;
+
+}
+.gg-heart{
+    color: #a71010;
+    top: 25px;
+    left: -22px;
+
+}
